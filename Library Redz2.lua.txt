@@ -687,7 +687,7 @@ function MakeWindow(Configs)
       AutoButtonColor = false
     })Corner(TextButton)Stroke(TextButton)
     
-    local TextLabel = Create("TextLabel", TextButton, {
+      local TextLabel = Create("TextLabel", TextButton, {
       TextSize = 12,
       TextColor3 = Configs_HUB.Cor_Text,
       Text = ButtonName,
@@ -1425,7 +1425,8 @@ function MakeWindow(Configs)
   end
   
   function AddTextLabel(parent, Configs)
-    local LabelTitle = Configs[1] or Configs.Title or ""
+    local LabelName = Configs[1] or Configs.Name "Text Label!!"
+    local LabelText = Configs[2] or CConfig.Text "Text Label!!"
     
     local Frame = Create("Frame", parent, {
       Size = UDim2.new(1, 0, 0, 25),
@@ -1485,7 +1486,7 @@ function MakeWindow(Configs)
   
   function AddParagraph(parent, Configs)
     local ParagraphName1 = Configs[1] or Configs.Title or "Paragraph!!"
-    local ParagraphName2 = Configs[1] or Configs.Text or "Paragraph!!"
+    local ParagraphName2 = Configs[2] or Configs.Text or "Paragraph!!"
     
     local Frame = Create("Frame", parent, {
       Size = UDim2.new(1, 0, 0, 25),
