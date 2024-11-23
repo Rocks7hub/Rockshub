@@ -14,7 +14,7 @@ local OrionLib = {
 		Default = {
 			Main = Color3.fromRGB(0, 0, 0),
 			Second = Color3.fromRGB(10, 10, 10),
-			Stroke = Color3.fromRGB(112, 35, 235),
+			Stroke = Color3.fromRGB(0, 255, 0),
 			Divider = Color3.fromRGB(60, 60, 60),
 			Text = Color3.fromRGB(240,240,240),
 			TextDark = Color3.fromRGB(150, 150, 150)
@@ -665,11 +665,11 @@ function OrionLib:MakeWindow(WindowConfig)
 	end)
 	
 	AddConnection(CloseBtn.MouseButton1Up, function()
-	  OrionLib:MakeNotification({Name = "DAVI SCRIPTS -",Content = "HUB sendo apagado, dados não deletados." ,Image = "rbxassetid://",Time = 7})task.wait(1)
+	  OrionLib:MakeNotification({Name = "Slowed Hub-",Content = "HUB sendo apagado, dados não deletados." ,Image = "rbxassetid://",Time = 7})task.wait(1)
 	  Orion:Destroy()
 	end)
 
-	OrionLib:MakeNotification({Name = "DAVI SCRIPTS -",Content = "HUB sendo Iniciado |" ,Image = "rbxassetid://14824506141",Time = 7})
+	OrionLib:MakeNotification({Name = "Slowed Hub-",Content = "Slowed hub Scripts Iniciado com Sucesso!" ,Image = "rbxassetid://14824506141",Time = 7})
 
 	local function LoadSequence()
 		MainWindow.Visible = false
